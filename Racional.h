@@ -15,4 +15,13 @@ public:
 	void setNum(int);
 	void setDen(int);
 	string toString();
+
+	Racional operator+(Racional operando){
+		den=this.den*operando.getDen();
+		num=(this.num*operando.getDen())+(this.den*operando.getNum());
+	}
+	Racional operator*(Racional operando){
+		den=this.den*operando.getDen();
+		num=this.num*operando.getNum();
+	}
 };

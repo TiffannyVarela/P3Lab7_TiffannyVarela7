@@ -14,4 +14,13 @@ public:
 	void setReal(int);
 	void setImaginaria(int);
 	string toString();
+
+	Complejo operator+(Complejo operando){
+		den=this.den*operando.getDen();
+		num=(this.num*operando.getDen())+(this.den*operando.getNum());
+	}
+	Complejo operator*(Complejo operando){
+		den=this.den*operando.getDen();
+		num=this.num*operando.getNum();
+	}
 };

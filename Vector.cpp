@@ -49,5 +49,11 @@ public:
 		coordenada coordenada_y=this.y+operando.getY();
 		coordenada coordenada_z=this.z+operando.getZ();
 	}
+
+	Vector operator*(Vector operando){
+		coordenada coordenada_x=this.x*operando.getX();
+		coordenada coordenada_y=this.y*operando.getY();
+		coordenada coordenada_z=this.z*operando.getZ();
+	}
 	
 };
