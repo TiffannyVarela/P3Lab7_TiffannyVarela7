@@ -109,34 +109,47 @@ int main(int argc, char const *argv[])
 						switch(opc4=menuTipos()){
 							case 1:
 								printC();
-								cout<<"\nIngrese la posicion del primer numero: ";
-								cin>>pos1;
-								cout<<"\nIngrese la posicion del segundo numero: ";
-								cin>>pos2;
-								while(pos1<0 || pos1>vectores_C.size()-1 || pos2<0 || pos2>vectores_C.size()-1 ){
-									cout<<"\nINGRESE POSICIONES VALIDAS\n"<<endl;
-									printVector();
-									cout<<"\nIngrese la posicion del primer numero: ";
+								if (!vectores_C.empty())
+								{
+									cout<<"\nIngrese la posicion del primer vector: ";
 									cin>>pos1;
-									cout<<"\nIngrese la posicion del segundo numero: ";
+									cout<<"\nIngrese la posicion del segundo vector: ";
 									cin>>pos2;
+									while(pos1<0 || pos1>vectores_C.size()-1 || pos2<0 || pos2>vectores_C.size()-1 ){
+										cout<<"\nINGRESE POSICIONES VALIDAS\n"<<endl;
+										printC();
+										cout<<"\nIngrese la posicion del primer vector: ";
+										cin>>pos1;
+										cout<<"\nIngrese la posicion del segundo vector: ";
+										cin>>pos2;
+									}
+									
+								}
+								else{
+									cout<<"Vector esta Vacio"<<endl;
 								}
 
 							break;
 
 							case 2:
 								printR();
-								cout<<"\nIngrese la posicion del primer vector: ";
-								cin>>pos1;
-								cout<<"\nIngrese la posicion del segundo vector: ";
-								cin>>pos2;
-								while(pos1<0 || pos1>vectores_R.size()-1 || pos2<0 || pos2>vectores_R.size()-1 ){
-									cout<<"\nINGRESE POSICIONES VALIDAS\n"<<endl;
-									printVector();
+								if (!vectores_R.empty())
+								{
 									cout<<"\nIngrese la posicion del primer vector: ";
 									cin>>pos1;
 									cout<<"\nIngrese la posicion del segundo vector: ";
 									cin>>pos2;
+									while(pos1<0 || pos1>vectores_R.size()-1 || pos2<0 || pos2>vectores_R.size()-1 ){
+										cout<<"\nINGRESE POSICIONES VALIDAS\n"<<endl;
+										printR();
+										cout<<"\nIngrese la posicion del primer vector: ";
+										cin>>pos1;
+										cout<<"\nIngrese la posicion del segundo vector: ";
+										cin>>pos2;
+									}
+								}
+								else{
+									cout<<"Vector esta Vacio"<<endl;
 								}
 							break;
 						}
@@ -146,33 +159,45 @@ int main(int argc, char const *argv[])
 						switch(opc4=menuTipos()){
 							case 1:
 								printC();
-								cout<<"\nIngrese la posicion del primer vector: ";
-								cin>>pos1;
-								cout<<"\nIngrese la posicion del segundo vector: ";
-								cin>>pos2;
-								while(pos1<0 || pos1>vectores_C.size()-1 || pos2<0 || pos2>vectores_C.size()-1 ){
-									cout<<"\nINGRESE POSICIONES VALIDAS\n"<<endl;
-									printVector();
+								if (!vectores_C.empty())
+								{
 									cout<<"\nIngrese la posicion del primer vector: ";
 									cin>>pos1;
 									cout<<"\nIngrese la posicion del segundo vector: ";
 									cin>>pos2;
+									while(pos1<0 || pos1>vectores_C.size()-1 || pos2<0 || pos2>vectores_C.size()-1 ){
+										cout<<"\nINGRESE POSICIONES VALIDAS\n"<<endl;
+										printC();
+										cout<<"\nIngrese la posicion del primer vector: ";
+										cin>>pos1;
+										cout<<"\nIngrese la posicion del segundo vector: ";
+										cin>>pos2;
+									}
+								}
+								else{
+									cout<<"Vector esta Vacio"<<endl;
 								}
 							break;
 
 							case 2:
 								printR();
-								cout<<"\nIngrese la posicion del primer vector: ";
-								cin>>pos1;
-								cout<<"\nIngrese la posicion del segundo vector: ";
-								cin>>pos2;
-								while(pos1<0 || pos1>vectores_R.size()-1 || pos2<0 || pos2>vectores_R.size()-1 ){
-									cout<<"\nINGRESE POSICIONES VALIDAS\n"<<endl;
-									printVector();
+								if (!vectores_R.empty())
+								{
 									cout<<"\nIngrese la posicion del primer vector: ";
 									cin>>pos1;
 									cout<<"\nIngrese la posicion del segundo vector: ";
 									cin>>pos2;
+									while(pos1<0 || pos1>vectores_R.size()-1 || pos2<0 || pos2>vectores_R.size()-1 ){
+										cout<<"\nINGRESE POSICIONES VALIDAS\n"<<endl;
+										printR();
+										cout<<"\nIngrese la posicion del primer vector: ";
+										cin>>pos1;
+										cout<<"\nIngrese la posicion del segundo vector: ";
+										cin>>pos2;
+									}
+								}
+								else{
+									cout<<"Vector esta Vacio"<<endl;
 								}
 							break;
 						}
