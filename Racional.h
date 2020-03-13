@@ -15,5 +15,4 @@ public:
 	void setNum(int);
 	void setDen(int);
 	string toString();
-	~Racional();
 };

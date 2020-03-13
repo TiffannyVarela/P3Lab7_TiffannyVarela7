@@ -32,7 +32,3 @@ string Racional::toString(){
 	cout<<num<<"/"<<den;
 	return " ";
 }
-
-Racional::~Racional(){
-	cout<<"Racional Eliminado"<<endl;
-}

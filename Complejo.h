@@ -14,5 +14,4 @@ public:
 	void setReal(int);
 	void setImaginaria(int);
 	string toString();
-	~Complejo();
 };

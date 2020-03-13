@@ -29,7 +29,7 @@ int main(int argc, char const *argv[])
 				switch(opc2=menuTipos()){//inicio switch2
 
 					case 1:{//inicio case 1
-						for (int i = 0; i==3; ++i)
+						for (int i = 0; i<3; ++i)
 						{
 							cout<<"Ingrese Numerador "<<i+1<<":";
 							cin>>num;
@@ -51,7 +51,7 @@ int main(int argc, char const *argv[])
 					break;//fin case 1
 
 					case 2:{//inicio case 2
-						for (int i = 0; i==3; ++i)
+						for (int i = 0; i<3; ++i)
 							{
 								cout<<"Ingrese Real "<<i+1<<":";
 								cin>>real;

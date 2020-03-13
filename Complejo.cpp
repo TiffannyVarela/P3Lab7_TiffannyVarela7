@@ -36,7 +36,3 @@ string Complejo::toString(){
 	}
 	return " ";
 }
-
-Complejo::~Complejo(){
-	cout<<"Complejo Eliminado"<<endl;
-}
