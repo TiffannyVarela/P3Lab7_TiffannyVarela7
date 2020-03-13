@@ -49,6 +49,8 @@ public:
 		coordenada coordenada_x=this->x+operando.getX();
 		coordenada coordenada_y=this->y+operando.getY();
 		coordenada coordenada_z=this->z+operando.getZ();
+		 //resp(coordenada_x,coordenada_y,coordenada_z);
+		//return resp;
 	}
 
 	Vector operator*(Vector operando){
@@ -56,6 +58,8 @@ public:
 		coordenada coordenada_x=this->x*operando.getX();
 		coordenada coordenada_y=this->y*operando.getY();
 		coordenada coordenada_z=this->z*operando.getZ();
+		//resp(coordenada_x,coordenada_y,coordenada_z);
+		//return resp;
 	}
 	
 };

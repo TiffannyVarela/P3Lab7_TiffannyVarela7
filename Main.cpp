@@ -123,7 +123,8 @@ int main(int argc, char const *argv[])
 										cout<<"\nIngrese la posicion del segundo vector: ";
 										cin>>pos2;
 									}
-
+									Vector <Complejo> c = vectores_C[pos1]+vectores_C[pos2];
+									vectores_C.push_back(c);
 								}
 								else{
 									cout<<"Vector esta Vacio"<<endl;
@@ -147,10 +148,8 @@ int main(int argc, char const *argv[])
 										cout<<"\nIngrese la posicion del segundo vector: ";
 										cin>>pos2;
 									}
-									/*mcd = MCD(num,den);
-								num= num/mcd;
-								den= den/mcd;
-								r1 = Racional(num,den);*/
+									Vector <Racional> r = vectores_R[pos1]+vectores_R[pos2];
+									vectores_R.push_back(r);
 								}
 								else{
 									cout<<"Vector esta Vacio"<<endl;
@@ -177,6 +176,8 @@ int main(int argc, char const *argv[])
 										cout<<"\nIngrese la posicion del segundo vector: ";
 										cin>>pos2;
 									}
+									Vector <Complejo> c = vectores_C[pos1]*vectores_C[pos2];
+									vectores_C.push_back(c);
 								}
 								else{
 									cout<<"Vector esta Vacio"<<endl;
@@ -199,6 +200,8 @@ int main(int argc, char const *argv[])
 										cout<<"\nIngrese la posicion del segundo vector: ";
 										cin>>pos2;
 									}
+									Vector <Racional> r = vectores_R[pos1]*vectores_R[pos2];
+									vectores_R.push_back(r);
 								}
 								else{
 									cout<<"Vector esta Vacio"<<endl;
