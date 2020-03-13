@@ -16,11 +16,14 @@ public:
 	string toString();
 
 	Complejo operator+(Complejo operando){
-		real = this->real+operando.getReal();
-		imaginaria = this->imaginaria+operando.getImaginaria();
+		Complejo resp;
+		resp.real = this->real+operando.getReal();
+		resp.imaginaria = this->imaginaria+operando.getImaginaria();
+		return resp;
 	}
 
 	Complejo operator*(Complejo operando){
+		Complejo resp;
 		int p1,p2,p3,p4;
 		p1=this->real*operando.getReal();
 		p2=this->real*operando.getImaginaria();
@@ -29,7 +32,8 @@ public:
 		int part2,part3;
 		part2=p2+p3;
 		part3=p4*-1;
-		real=p1+part3;
-		imaginaria=part2;
+		resp.real=p1+part3;
+		resp.imaginaria=part2;
+		return resp;
 	}
 };

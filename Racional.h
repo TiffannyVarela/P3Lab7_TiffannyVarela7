@@ -17,11 +17,15 @@ public:
 	string toString();
 
 	Racional operator+(Racional operando){
-		den=this->den*operando.getDen();
-		num=(this->num*operando.getDen())+(this->den*operando.getNum());
+		Racional resp;
+		resp.den=this->den*operando.getDen();
+		resp.num=(this->num*operando.getDen())+(this->den*operando.getNum());
+		return resp;
 	}
 	Racional operator*(Racional operando){
-		den=this->den*operando.getDen();
-		num=this->num*operando.getNum();
+		Racional resp;
+		resp.den=this->den*operando.getDen();
+		resp.num=this->num*operando.getNum();
+		return resp;
 	}
 };

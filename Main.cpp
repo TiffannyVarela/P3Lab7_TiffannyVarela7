@@ -123,7 +123,7 @@ int main(int argc, char const *argv[])
 										cout<<"\nIngrese la posicion del segundo vector: ";
 										cin>>pos2;
 									}
-									
+
 								}
 								else{
 									cout<<"Vector esta Vacio"<<endl;
@@ -147,6 +147,10 @@ int main(int argc, char const *argv[])
 										cout<<"\nIngrese la posicion del segundo vector: ";
 										cin>>pos2;
 									}
+									/*mcd = MCD(num,den);
+								num= num/mcd;
+								den= den/mcd;
+								r1 = Racional(num,den);*/
 								}
 								else{
 									cout<<"Vector esta Vacio"<<endl;
