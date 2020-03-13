@@ -40,7 +40,7 @@ public:
 	};
 
 	string toString(){
-		cout<<"["<<x<<","<<y<<","<<z<<"]";
+		cout<<"["<<x.toString()<<","<<y.toString()<<","<<z.toString()<<"]";
 		return " ";
 	}
 
