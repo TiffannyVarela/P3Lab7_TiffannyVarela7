@@ -113,7 +113,7 @@ int main(int argc, char const *argv[])
 								cin>>pos1;
 								cout<<"\nIngrese la posicion del segundo numero: ";
 								cin>>pos2;
-								while(pos1<0 || pos1>numeros.size()-1 || pos2<0 || pos2>numeros.size()-1 ){
+								while(pos1<0 || pos1>vectores_C.size()-1 || pos2<0 || pos2>vectores_C.size()-1 ){
 									cout<<"\nINGRESE POSICIONES VALIDAS\n"<<endl;
 									printVector();
 									cout<<"\nIngrese la posicion del primer numero: ";
@@ -121,21 +121,21 @@ int main(int argc, char const *argv[])
 									cout<<"\nIngrese la posicion del segundo numero: ";
 									cin>>pos2;
 								}
-								
+
 							break;
 
 							case 2:
 								printR();
-								cout<<"\nIngrese la posicion del primer numero: ";
+								cout<<"\nIngrese la posicion del primer vector: ";
 								cin>>pos1;
-								cout<<"\nIngrese la posicion del segundo numero: ";
+								cout<<"\nIngrese la posicion del segundo vector: ";
 								cin>>pos2;
-								while(pos1<0 || pos1>numeros.size()-1 || pos2<0 || pos2>numeros.size()-1 ){
+								while(pos1<0 || pos1>vectores_R.size()-1 || pos2<0 || pos2>vectores_R.size()-1 ){
 									cout<<"\nINGRESE POSICIONES VALIDAS\n"<<endl;
 									printVector();
-									cout<<"\nIngrese la posicion del primer numero: ";
+									cout<<"\nIngrese la posicion del primer vector: ";
 									cin>>pos1;
-									cout<<"\nIngrese la posicion del segundo numero: ";
+									cout<<"\nIngrese la posicion del segundo vector: ";
 									cin>>pos2;
 								}
 							break;
@@ -146,32 +146,32 @@ int main(int argc, char const *argv[])
 						switch(opc4=menuTipos()){
 							case 1:
 								printC();
-								cout<<"\nIngrese la posicion del primer numero: ";
+								cout<<"\nIngrese la posicion del primer vector: ";
 								cin>>pos1;
-								cout<<"\nIngrese la posicion del segundo numero: ";
+								cout<<"\nIngrese la posicion del segundo vector: ";
 								cin>>pos2;
-								while(pos1<0 || pos1>numeros.size()-1 || pos2<0 || pos2>numeros.size()-1 ){
+								while(pos1<0 || pos1>vectores_C.size()-1 || pos2<0 || pos2>vectores_C.size()-1 ){
 									cout<<"\nINGRESE POSICIONES VALIDAS\n"<<endl;
 									printVector();
-									cout<<"\nIngrese la posicion del primer numero: ";
+									cout<<"\nIngrese la posicion del primer vector: ";
 									cin>>pos1;
-									cout<<"\nIngrese la posicion del segundo numero: ";
+									cout<<"\nIngrese la posicion del segundo vector: ";
 									cin>>pos2;
 								}
 							break;
 
 							case 2:
 								printR();
-								cout<<"\nIngrese la posicion del primer numero: ";
+								cout<<"\nIngrese la posicion del primer vector: ";
 								cin>>pos1;
-								cout<<"\nIngrese la posicion del segundo numero: ";
+								cout<<"\nIngrese la posicion del segundo vector: ";
 								cin>>pos2;
-								while(pos1<0 || pos1>numeros.size()-1 || pos2<0 || pos2>numeros.size()-1 ){
+								while(pos1<0 || pos1>vectores_R.size()-1 || pos2<0 || pos2>vectores_R.size()-1 ){
 									cout<<"\nINGRESE POSICIONES VALIDAS\n"<<endl;
 									printVector();
-									cout<<"\nIngrese la posicion del primer numero: ";
+									cout<<"\nIngrese la posicion del primer vector: ";
 									cin>>pos1;
-									cout<<"\nIngrese la posicion del segundo numero: ";
+									cout<<"\nIngrese la posicion del segundo vector: ";
 									cin>>pos2;
 								}
 							break;
