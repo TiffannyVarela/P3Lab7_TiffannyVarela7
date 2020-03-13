@@ -35,6 +35,12 @@ int main(int argc, char const *argv[])
 							cin>>num;
 							cout<<"Ingrese Denominador "<<i+1<<":";
 							cin>>den;
+							while(den==0){
+								cout<<"0 no es valido"<<endl;
+								cout<<"Ingrese Denominador "<<i+1<<":";
+								cin>>den;
+							}
+							
 							if(i==1){
 								r1 = Racional(num,den);
 							}
