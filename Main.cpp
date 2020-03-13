@@ -11,6 +11,7 @@ int menuTipos();
 	vector<Vector<Racional>> vectores_R;
 	vector<Vector<Complejo>> vectores_C;
 void print();
+int MCD(int,int);
 
 int main(int argc, char const *argv[])
 {
@@ -20,7 +21,7 @@ int main(int argc, char const *argv[])
 	int real,imag;
 	Racional r1,r2,r3;
 	Complejo c1,c2,c3;
-
+	int mcd;
 	do//inicio do while
 	{
 		switch(opc=menu()){//inicio switch
@@ -40,7 +41,9 @@ int main(int argc, char const *argv[])
 								cout<<"Ingrese Denominador "<<i+1<<":";
 								cin>>den;
 							}
-							
+							mcd = MCD(num,den);
+							num/= mcd;
+							den/= mcd;
 							if(i==1){
 								r1 = Racional(num,den);
 							}
@@ -158,4 +161,20 @@ void print(){
 	else{
 		cout<<"El vector esta vacio"<<endl;
 	}
+}
+
+int MCD(int n1, int n2) {
+    int resultado = 1; 
+    int factor = 2;    
+
+    while(factor <= n1 || factor <= n2) {
+        while(!(n1 % factor) && !(n2 % factor)) {
+            resultado *= factor;
+            n1 /= factor;
+            n2 /= factor;
+        }
+        if(factor == 2) factor++; 
+        else factor+=2;            
+    }
+    return resultado;
 }
