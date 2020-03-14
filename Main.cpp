@@ -50,6 +50,7 @@ int main(int argc, char const *argv[])
 									c3 = Complejo(real,imag);
 								}
 							}
+							cout<<"["<<c1.toString()<<","<<c2.toString()<<","<<c3.toString()<<"]\n"<<endl;
 							Vector <Complejo> c(c1,c2,c3);
 							vectores_C.push_back(c);
 					}
@@ -88,6 +89,7 @@ int main(int argc, char const *argv[])
 								r3 = Racional(num,den);
 							}
 						}
+						cout<<"["<<r1.toString()<<","<<r2.toString()<<","<<r3.toString()<<"]\n"<<endl;
 						Vector <Racional> v(r1,r2,r3);
 						vectores_R.push_back(v);
 					}
